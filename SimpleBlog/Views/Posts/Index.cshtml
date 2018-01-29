@@ -1,22 +1,11 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "Posts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<h2>Posts Index</h2>
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Posts Index</title>
-</head>
-<body>
-    <div>
-        @*Go <a href="/login">Sign-in</a> first!*@
-        Go <a href="@Url.RouteUrl("login")">Sign-in</a> first!
-    </div>
-    <p>different syntax, same target</p>
-    Go @Html.RouteLink("Sign-in", "login") first!
-
-</body>
-</html>
+<p> You must
+    @Html.ActionLink("sign in", "Login", "Auth", new { area = "" }, new { @class = "no-class" })
+    to see the posts.
+</p>

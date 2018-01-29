@@ -11,7 +11,7 @@ namespace SimpleBlog.Areas.Admin.Controllers
         // GET: Admin/Users
         public ActionResult Index()
         {
-            return Content("Users...content from Admin/UsersController");
+            return View();
         }
     }
 }
