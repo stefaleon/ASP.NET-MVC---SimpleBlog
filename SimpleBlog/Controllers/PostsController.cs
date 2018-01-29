@@ -10,7 +10,7 @@ namespace SimpleBlog.Controllers
     {
         public ActionResult Index()
         {
-            return Content("new Home route, this is content from the PostsController");
+            return View();
         }
     }
 }

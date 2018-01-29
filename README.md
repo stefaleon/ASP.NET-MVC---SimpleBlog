@@ -21,3 +21,9 @@
 
 * *Admin* area.
 * *UsersController* controller.
+
+
+&nbsp;
+## 03 Linking to Routes
+
+* Route link syntax example from the *Posts* to the *Login* view.

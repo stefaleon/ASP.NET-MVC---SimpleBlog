@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Posts Index</title>
+</head>
+<body>
+    <div>
+        @*Go <a href="/login">Sign-in</a> first!*@
+        Go <a href="@Url.RouteUrl("login")">Sign-in</a> first!
+    </div>
+    <p>different syntax, same target</p>
+    Go @Html.RouteLink("Sign-in", "login") first!
+
+</body>
+</html>
