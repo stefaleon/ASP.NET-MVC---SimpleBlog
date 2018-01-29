@@ -8,3 +8,9 @@
 
 * New ASP.NET Web Application.
 * MVC, No Authentication
+
+&nbsp;
+## 01 New Routes and Controllers
+
+* *Home* route - *PostsController* controller.
+* *Login* route - *AuthController* controller.
