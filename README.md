@@ -38,3 +38,12 @@
 * *Login* view for the *Auth* controller.
 * *Index* view for the *Users* from the *Admin* area.
 * Move the *Navbar* code to a partial view and add the ActionLinks for the views.
+
+
+&nbsp;
+## 05 Return data from View with a ViewModel
+
+* Add a route for the *login* url so that the route becomes */login* instead of */auth/login*.
+* Add the *ViewModels* folder in order to bind models to the views.
+* Add the *Auth* view model which includes the *AuthLogin* class.
+* In *AuthController*, add an overload for the *Login* method which takes an *AuthLogin* parameter. Give it the *HttpPost* attribute.
