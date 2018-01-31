@@ -47,3 +47,14 @@
 * Add the *ViewModels* folder in order to bind models to the views.
 * Add the *Auth* view model which includes the *AuthLogin* class.
 * In *AuthController*, add an overload for the *Login* method which takes an *AuthLogin* parameter. Give it the *HttpPost* attribute.
+
+
+
+&nbsp;
+## 06 Bind the model, add Annotations and Validation
+
+* In *Login.cshtml*, bind the *AuthLogin* model.
+* Recreate the form using the framework helper methods.
+* Add attributes to the *Auth* ViewModel with data annotations.
+* Add framework validation with messages and summary.
+* Add custom validation with additional logic to the method in the controller.
