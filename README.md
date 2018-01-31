@@ -58,3 +58,14 @@
 * Add attributes to the *Auth* ViewModel with data annotations.
 * Add framework validation with messages and summary.
 * Add custom validation with additional logic to the method in the controller.
+
+
+
+&nbsp;
+## 07 Authorization
+
+* Restrict the access to the *Users* page to admins only with an annotation in *UsersController*.
+* Specify the *Forms* authentication mode type and define the role provider with roleManager in Web.config.
+* Using System.Web.Security, create a persistent authentication cookie in the login method.
+* Add the *Infrastructure* folder and the *RoleProvider* class.
+* Implement a demo version of *GetRolesForUser* which returns the admin role when the username is *asdf*. The user session persists since a session cookie is being set at login and now the *Users* page is accessible by the *asdf* user.
