@@ -16,7 +16,7 @@ namespace SimpleBlog.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(AuthLogin form)
+        public ActionResult Login(AuthLogin form, string returnUrl)
         {
             if (!ModelState.IsValid)
                 return View(form);                       
@@ -29,7 +29,10 @@ namespace SimpleBlog.Controllers
 
             FormsAuthentication.SetAuthCookie(form.Username, true);
 
-            return Content($"Posted {form.Username} and {form.Password}");
+            if (!string.IsNullOrWhiteSpace(returnUrl))
+                return Redirect(returnUrl); 
+                    
+            return Content($"User {form.Username} is not an admin.");
         }
     }
 }

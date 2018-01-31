@@ -69,3 +69,11 @@
 * Using System.Web.Security, create a persistent authentication cookie in the login method.
 * Add the *Infrastructure* folder and the *RoleProvider* class.
 * Implement a demo version of *GetRolesForUser* which returns the admin role when the username is *asdf*. The user session persists since a session cookie is being set at login and now the *Users* page is accessible by the *asdf* user.
+
+
+
+&nbsp;
+## 08 The returnUrl key
+
+* Add a string parameter to the HttpPost Login method and name it *returnUrl* since this is the name of the key in the query parameter that the framework creates on unauthorized attempts to access certain pages (such as *Users*).
+* After an anauthorized attempt to navigate to the *Users* page, on successful admin login (that is if username is *asdf*), the user will be redirected to the page defined by *returnUrl* (the *Users* page).
