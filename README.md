@@ -77,3 +77,12 @@
 
 * Add a string parameter to the HttpPost Login method and name it *returnUrl* since this is the name of the key in the query parameter that the framework creates on unauthorized attempts to access certain pages (such as *Users*).
 * After an anauthorized attempt to navigate to the *Users* page, on successful admin login (that is if username is *asdf*), the user will be redirected to the page defined by *returnUrl* (the *Users* page).
+
+
+
+&nbsp;
+## 09 Show Logged User and Sign Out
+
+* Configure the *NavBar* view including a conditional that checks for authenticated users. Display links accordingly.
+* Configure the *ShowLoggedUser* action in the *Home* controller and redirect to it from specific returns in *AuthController*.
+* Configure the *Logout* action in *AuthController*.

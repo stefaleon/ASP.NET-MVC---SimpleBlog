@@ -12,12 +12,15 @@ namespace SimpleBlog.Controllers
     {        
         public ActionResult Login()
         {
+            if (User.Identity.IsAuthenticated)
+                return RedirectToAction("ShowLoggedUser", "Home");
+
             return View(new AuthLogin { });
         }
 
         [HttpPost]
         public ActionResult Login(AuthLogin form, string returnUrl)
-        {
+        {            
             if (!ModelState.IsValid)
                 return View(form);                       
 
@@ -30,9 +33,16 @@ namespace SimpleBlog.Controllers
             FormsAuthentication.SetAuthCookie(form.Username, true);
 
             if (!string.IsNullOrWhiteSpace(returnUrl))
-                return Redirect(returnUrl); 
-                    
-            return Content($"User {form.Username} is not an admin.");
+                return Redirect(returnUrl);
+
+            return RedirectToAction("ShowLoggedUser", "Home");
+        }
+
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login");
         }
     }
 }

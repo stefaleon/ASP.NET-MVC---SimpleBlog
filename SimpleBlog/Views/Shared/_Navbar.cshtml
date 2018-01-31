@@ -9,11 +9,28 @@
             @Html.ActionLink("SimpleBlog", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
         </div>
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Posts", "Index", "Posts", new { area = "" }, new { @class = "no-class" })</li>
-                <li>@Html.ActionLink("Sign in", "Login", "Auth", new { area = "" }, new { @class = "no-class" })</li>
-                <li>@Html.ActionLink("Users", "Index", "Users", new { area = "Admin" }, new { @class = "no-class" })</li>
+            @if (User.Identity.IsAuthenticated)
+            {
+            <ul class="nav navbar-nav">                 
+                <li>@Html.ActionLink(User.Identity.Name, "Index", "Posts", new { area = "" }, new { @class = "no-class" })</li>
+                @if (User.IsInRole("admin"))
+                {
+                    <li>@Html.ActionLink("Users", "Index", "Users", new { area = "Admin" }, new { @class = "no-class" })</li> 
+                }                
+             </ul>   
+             <ul class="nav navbar-nav navbar-right">
+                 <li>@Html.ActionLink("Sign out", "Logout", "Auth", new { area = "" }, new { @class = "no-class" })</li>
+             </ul>
+            }
+            else
+            {
+             <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Posts", "Index", "Posts", new { area = "" }, new { @class = "no-class" })</li>                
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("Sign in", "Login", "Auth", new { area = "" }, new { @class = "no-class" })</li>
+             </ul>
+            }   
         </div>
     </div>
 </div>

@@ -13,6 +13,14 @@ namespace SimpleBlog.Controllers
             return View();
         }
 
+        public ActionResult ShowLoggedUser()
+        {
+            if (User.Identity.IsAuthenticated)
+                return View("SignedIn");
+            else
+                return View("Index");
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
