@@ -58,3 +58,5 @@
 * Add attributes to the *Auth* ViewModel with data annotations.
 * Add framework validation with messages and summary.
 * Add custom validation with additional logic to the method in the controller.
+
+br06
