@@ -86,3 +86,5 @@
 * Configure the *NavBar* view including a conditional that checks for authenticated users. Display links accordingly.
 * Configure the *ShowLoggedUser* action in the *Home* controller and redirect to it from specific returns in *AuthController*.
 * Configure the *Logout* action in *AuthController*.
+
+br09
