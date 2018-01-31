@@ -69,3 +69,5 @@
 * Using System.Web.Security, create a persistent authentication cookie in the login method.
 * Add the *Infrastructure* folder and the *RoleProvider* class.
 * Implement a demo version of *GetRolesForUser* which returns the admin role when the username is *asdf*. The user session persists since a session cookie is being set at login and now the *Users* page is accessible by the *asdf* user.
+
+br07
