@@ -23,6 +23,10 @@ namespace SimpleBlog
 
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
         public virtual DbSet<User> Users { get; set; }
+
+        public virtual DbSet<Role> Roles { get; set; }
+
+
     }
 
     //public class MyEntity

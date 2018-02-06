@@ -167,7 +167,12 @@
     <Compile Include="Migrations\201802051427497_CreateUsersTable.Designer.cs">
       <DependentUpon>201802051427497_CreateUsersTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802061215063_CreateRolesTable.cs" />
+    <Compile Include="Migrations\201802061215063_CreateRolesTable.Designer.cs">
+      <DependentUpon>201802061215063_CreateRolesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Role.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleBlogModel.cs" />
@@ -244,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802051427497_CreateUsersTable.resx">
       <DependentUpon>201802051427497_CreateUsersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802061215063_CreateRolesTable.resx">
+      <DependentUpon>201802061215063_CreateRolesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

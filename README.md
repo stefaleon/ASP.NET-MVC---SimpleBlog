@@ -96,6 +96,12 @@
 
 
 &nbsp;
-## 11 Users model
+## 11 User model
 
-* Add the *Users* model, a related DbSet, a migration and update the database.
+* Add the *User* model, a related DbSet, a migration and update the database.
+
+
+&nbsp;
+## 12 Role model
+
+* Add the *Role* model, a related DbSet, a migration and update the database.
