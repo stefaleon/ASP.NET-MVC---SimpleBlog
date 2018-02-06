@@ -111,3 +111,11 @@
 ## 13 Connect Users and Roles
 
 * Configure a many to many relationship. Add a migration and update the database.
+
+
+
+&nbsp;
+## 14 Index Users
+
+* Connect to the database and pass the list of existing users to the *Index* action result of the *UsersController*.
+* Define an IEnumerable of users as a ViewModel in the related View and edit the View accordingly.

@@ -9,10 +9,16 @@ namespace SimpleBlog.Areas.Admin.Controllers
     [Authorize(Roles = "admin")]
     public class UsersController : Controller
     {
+        SimpleBlogModel db = new SimpleBlogModel();
+
         // GET: Admin/Users
         public ActionResult Index()
         {
-            return View();
+            // get the users list from the db and assign it to a viewmodel object
+            var usersviewmodel = db.Users.ToList();
+
+            // pass the model to the Index view 
+            return View(usersviewmodel);
         }
     }
 }
