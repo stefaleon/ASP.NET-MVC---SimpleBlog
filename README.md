@@ -105,3 +105,9 @@
 ## 12 Role model
 
 * Add the *Role* model, a related DbSet, a migration and update the database.
+
+
+&nbsp;
+## 13 Connect Users and Roles
+
+* Configure a many to many relationship. Add a migration and update the database.

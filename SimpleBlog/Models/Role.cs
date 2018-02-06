@@ -12,5 +12,7 @@ namespace SimpleBlog.Models
 
         [Required]
         public string Rolename { get; set; }
+
+        public List<User> UsersInRole { get; set; }
     }
 }

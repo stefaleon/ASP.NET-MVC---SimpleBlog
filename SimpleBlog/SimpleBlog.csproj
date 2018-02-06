@@ -171,6 +171,10 @@
     <Compile Include="Migrations\201802061215063_CreateRolesTable.Designer.cs">
       <DependentUpon>201802061215063_CreateRolesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802061232129_UsersRoles.cs" />
+    <Compile Include="Migrations\201802061232129_UsersRoles.Designer.cs">
+      <DependentUpon>201802061232129_UsersRoles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\User.cs" />
@@ -252,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802061215063_CreateRolesTable.resx">
       <DependentUpon>201802061215063_CreateRolesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802061232129_UsersRoles.resx">
+      <DependentUpon>201802061232129_UsersRoles.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

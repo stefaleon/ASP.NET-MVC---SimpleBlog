@@ -15,5 +15,7 @@ namespace SimpleBlog.Models
         public string Email { get; set; }
         [Required]
         public string Password { get; set; }
+
+        public List<Role> Role { get; set; }
     }
 }
