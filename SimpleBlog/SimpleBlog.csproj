@@ -163,7 +163,12 @@
     <Compile Include="Migrations\201802021421341_initial.Designer.cs">
       <DependentUpon>201802021421341_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802051427497_CreateUsersTable.cs" />
+    <Compile Include="Migrations\201802051427497_CreateUsersTable.Designer.cs">
+      <DependentUpon>201802051427497_CreateUsersTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleBlogModel.cs" />
     <Compile Include="ViewModels\Auth.cs" />
@@ -216,7 +221,6 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Posts\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -237,6 +241,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201802021421341_initial.resx">
       <DependentUpon>201802021421341_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802051427497_CreateUsersTable.resx">
+      <DependentUpon>201802051427497_CreateUsersTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

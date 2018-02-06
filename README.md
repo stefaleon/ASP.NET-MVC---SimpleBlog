@@ -93,3 +93,9 @@
 
 * Add - New Item - Data - ADO.NET Entity Data Model -> *SimpleBlogModel*, Empty Code-First Model. A connection string pointing at the  *SimpleBlog.SimpleBlogModel* database is added to *Web.config*.
 * Enable migrations, add initial and update database.
+
+
+&nbsp;
+## 11 Users model
+
+* Add the *Users* model, a related DbSet, a migration and update the database.
